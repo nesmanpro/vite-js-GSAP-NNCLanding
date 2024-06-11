@@ -2,7 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 50px 10px;
+    &__logo {
+        height: 6rem;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        img {
+            height: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
 
 
     &__hamburger {

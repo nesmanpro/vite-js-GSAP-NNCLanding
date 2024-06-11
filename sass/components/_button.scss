@@ -14,15 +14,19 @@
 
     &--dark {
         background-color: var(--color-button--dark);
-        color: var(--color-button-text--light);
+        color: var(--color-bright);
         border: solid 1px var(--color-button--dark);
         
+        svg path {
+            fill: var(--color-bright);
+        }
         &:hover{
             color: var(--color-button--dark);
             background-color: transparent;
             transition: all 0.3s ease-in-out;
             svg path {
                 fill: var(--color-text--dark);
+                transition: all 0.3s ease-in-out;
             }
         }
     }
@@ -40,8 +44,10 @@
         &:hover{
             transition: all 0.3s ease-in-out;
             background-color:transparent;
-            color: var(--color-button-text--light);
+            border: solid 1px var(--color-bright);
+            color: var(--color-bright);
             svg path {
+                transition: all 0.3s ease-in-out;
                 fill: var(--color-text--light);
             }
         }
