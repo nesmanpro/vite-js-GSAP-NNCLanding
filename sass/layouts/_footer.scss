@@ -1,0 +1,52 @@
+.footer {
+
+    
+    &__section {
+        padding: 4.8rem;
+    }
+
+    &__top,
+    &__bottom {
+        @include page-grid;
+    }
+
+    &__top{
+        @include fluid-type(430px, 1440px, 10px, 19px);
+
+        margin-bottom: 16rem;
+        position: relative;
+        padding-top: 2rem;
+
+
+        ul li {
+            cursor: pointer;
+        }
+    }
+
+    &__bottom{
+        font-size: 16px;
+        position: relative;
+        padding-top: 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0.5px;
+            background-color: rgb(65, 65, 65);
+            transform-origin: center left;
+        }
+        
+    }
+
+    &__menu{
+        margin-left: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 13px;
+        }
+    }
+}

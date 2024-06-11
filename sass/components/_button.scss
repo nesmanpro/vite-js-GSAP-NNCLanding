@@ -1,0 +1,73 @@
+.button {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding: 14px 24px;
+    border-radius: 10000px;
+    width: max-content;
+    height: max-content;
+
+    &--dark {
+        background-color: var(--color-button--dark);
+        color: var(--color-button-text--light);
+        border: solid 1px var(--color-button--dark);
+        transition: all 0.3s ease-in-out;
+        
+        &:hover{
+            color: var(--color-button--dark);
+            background-color: transparent;
+            svg path {
+                fill: var(--color-text--dark);
+            }
+        }
+    }
+    
+    &--light {
+        background-color: var(--color-button--light);
+        color: var(--color-text--dark);
+        border: solid 1px var(--color-button--light);
+        transition: all 0.3s ease-in-out;
+
+        svg path {
+            fill: var(--color-text--dark);
+        }
+
+
+        &:hover{
+            background-color:transparent;
+            color: var(--color-button-text--light);
+            svg path {
+                fill: var(--color-text--light);
+            }
+        }
+    }
+
+    &[data-animation='button'] {
+        transform: scale(0);
+        transform-origin: 50% 50%;
+
+        >span {
+            display: inline-block;
+            width: 0px;
+            overflow: hidden;
+        }
+
+        >span span {
+            display: inline-block;
+            transform: translateY(16px);
+            white-space: nowrap;
+        }
+
+        svg {
+            width: 0px;
+            overflow: hidden;
+            transform: translateX(-8px);
+            opacity: 0;
+        }
+    }
+}

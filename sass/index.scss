@@ -1,0 +1,29 @@
+//Abstracts
+@import './abstracts/functions';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+//Base
+@import './base/reset';
+@import './base/animation';
+@import './base/base';
+@import './base/container';
+@import './base/section';
+@import './base/typography/index.scss';
+@import './base/animation';
+@import './base/grid';
+
+//Components
+@import './components/button';
+//@import 'components/image-wrapper';
+//@import 'components/parallax-image';
+
+//Layout
+@import './layouts/hero';
+@import './layouts/header';
+@import './layouts/text-columns';
+@import './layouts/projects';
+@import './layouts/list';
+@import './layouts/company';
+@import './layouts/image-grid';
+@import './layouts/footer';
