@@ -28,15 +28,15 @@ export default class Button extends Observer {
             duration: 0.5,
         }).to(this.textWrapper, {
             width: 'auto',
-        }, '-=0.3'
+        }, '-=0.5'
         ).to(this.text, {
             y: 0
-        }, '<'
+        }, '-=0.9'
         ).to(this.icon, {
             width: 'auto',
             opacity: 1,
             y: 0,
             x: 0
-        }, '-=0.2')
+        }, '-=0.5')
     }
 }
