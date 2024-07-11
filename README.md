@@ -1,8 +1,8 @@
-# No Name Studio
+# Vite + VanillaJS + GSAP + SASS
 
 ## Description
 
-No Name Studio is a modern digital website that showcases the services and projects of a digital agency based in Málaga. The site is designed with HTML and SASS, and uses JavaScript for animations and dynamic interactions.
+The site is designed with HTML and SASS, and uses JavaScript + GSAP for animations and dynamic interactions.
 
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)]()
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)]()
